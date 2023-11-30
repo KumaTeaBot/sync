@@ -1,0 +1,21 @@
+name: Sync
+
+on:
+  schedule: 
+    - cron: '*/30 * * * *'
+
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Clone this repo first
+      uses: actions/checkout@v4
+
+    - name: Sync repos
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+      run: |
+        /bin/bash run.sh
