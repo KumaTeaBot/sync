@@ -8,6 +8,7 @@ gh repo sync KumaTeaBot/KumaTea-bot --force --branch master
 gh repo sync KumaTeaBot/NextBot     --force
 gh repo sync KumaTeaBot/EvalBot     --force
 gh repo sync KumaTeaBot/daka        --force
+gh repo sync KumaTeaBot/GamBot      --force
 
 # py projects
 
