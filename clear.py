@@ -27,4 +27,5 @@ def delete_workflow_runs():
 
 
 if __name__ == '__main__':
-    delete_workflow_runs()
+    for i in range(2):  # 24 * 2 // 20 + 1
+        delete_workflow_runs()
